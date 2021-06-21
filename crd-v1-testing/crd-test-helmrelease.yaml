@@ -7,4 +7,4 @@ spec:
   chart:
     repository: http://chartmuseum-chartmuseum.default.svc.cluster.local:8080
     name: crd-test
-    version: 0.1.0
+    version: 0.2.0
