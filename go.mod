@@ -28,14 +28,14 @@ require (
 	github.com/yvasiyarov/newrelic_platform_go v0.0.0-20160601141957-9c099fbc30e9 // indirect
 	google.golang.org/grpc v1.27.1
 	helm.sh/helm/v3 v3.6.3
-	k8s.io/api v0.20.4
-	k8s.io/apiextensions-apiserver v0.20.4
-	k8s.io/apimachinery v0.20.4
-	k8s.io/cli-runtime v0.20.4
+	k8s.io/api v0.21.0
+	k8s.io/apiextensions-apiserver v0.21.0
+	k8s.io/apimachinery v0.21.0
+	k8s.io/cli-runtime v0.21.0
 	k8s.io/client-go v11.0.0+incompatible
 	k8s.io/helm v2.17.0+incompatible
 	k8s.io/klog v1.0.0
-	k8s.io/kubectl v0.20.4
+	k8s.io/kubectl v0.21.0
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
 	sigs.k8s.io/yaml v1.2.0
 )
@@ -59,7 +59,7 @@ replace (
 // github.com/fluxcd/helm-operator
 // +-> github.com/fluxcd/flux@v1.17.2
 //     +-> k8s.io/client-go@v11.0.0+incompatible
-replace k8s.io/client-go => k8s.io/client-go v0.20.4
+replace k8s.io/client-go => k8s.io/client-go v0.21.7
 
 // Force upgrade because of a transitive downgrade.
 // github.com/fluxcd/flux
@@ -67,7 +67,7 @@ replace k8s.io/client-go => k8s.io/client-go v0.20.4
 //     +-> helm.sh/helm/v3@v3.1.2
 //     +-> helm.sh/helm@v2.16.1
 replace (
-	helm.sh/helm/v3 => helm.sh/helm/v3 v3.5.4
+	helm.sh/helm/v3 => helm.sh/helm/v3 v3.6.3
 	k8s.io/helm => k8s.io/helm v2.17.0+incompatible
 )
 
