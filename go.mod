@@ -76,3 +76,6 @@ replace (
 // +-> helm.sh/helm/v3@v3.6.3
 //     +-> github.com/opencontainers/runc@v1.0.2
 replace github.com/opencontainers/runc => github.com/opencontainers/runc v1.0.2
+
+// Mitigating: GHSA-5j5w-g665-5m35
+replace github.com/containerd/containerd => github.com/containerd/containerd v1.4.12
